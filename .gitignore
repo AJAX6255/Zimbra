@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Streamlit
+.streamlit/config.toml
+
+# SQLite Database
+market_forum_data.db
+
+# Secrets
+.env
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Packaging
+*.egg-info/
+build/
+dist/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+

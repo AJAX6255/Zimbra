@@ -1,0 +1,21 @@
+
+# Use these commands on Windows 11 PowerShell to launch the app locally
+
+
+mkdir C:\Users\$env:USERNAME\Documents\stock_forum_sentiment_app
+cd C:\Users\$env:USERNAME\Documents\stock_forum_sentiment_app
+
+
+# Copy the shared files into that folder, then run
+
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python -m textblob.download_corpora
+streamlit run app.py
+
+#If PowerShell blocks activation, run this first:
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1

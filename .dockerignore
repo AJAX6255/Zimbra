@@ -1,0 +1,20 @@
+.git
+.gitignore
+.venv
+venv
+ENV/
+.pytest_cache
+__pycache__
+*.pyc
+*.db
+.env
+tests/
+walkthrough.md
+PROJECT.md
+task.md
+implementation_plan.md
+Zimbra_pred_app_env.txt
+Zimbra_pred_app_launch.txt
+*.docx
+*.pdf
+LInes of Code to run 1 at a time to launch app.txt
