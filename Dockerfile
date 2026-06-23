@@ -26,4 +26,7 @@ COPY app.py app_runner.py ./
 EXPOSE 8080
 
 # Command to run on container startup
-CMD ["python", "app_runner.py"]
+CMD ["streamlit", "run", "app.py", \
+    "--server.port=8080", \
+    "--server.address=0.0.0.0", \
+    "--server.headless=true"]
