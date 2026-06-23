@@ -18,12 +18,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy package descriptors and source code
-COPY pyproject.toml .
+# Copy source code and additional app files
 COPY zimbra/ ./zimbra/
-RUN pip install --no-cache-dir -e .
-
-# Copy additional app files
 COPY app.py app_runner.py .
 
 # Expose port
