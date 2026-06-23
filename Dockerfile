@@ -20,7 +20,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy source code and additional app files
 COPY zimbra/ ./zimbra/
-COPY app.py app_runner.py .
+COPY app.py app_runner.py ./
 
 # Expose port
 EXPOSE 8080
