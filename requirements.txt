@@ -8,3 +8,4 @@ beautifulsoup4>=4.12.3
 textblob>=0.18.0.post0
 lxml>=5.2.2
 python-dotenv>=1.0.1
+yfinance>=1.4.0
